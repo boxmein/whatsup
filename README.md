@@ -12,12 +12,46 @@ A configuration file is defined based on a bunch of rules, which specify conditi
 
 ### fetchers/battery-level.pl
 
-wololo
+```
+battery-level.pl - outputs the system battery level
+
+usage: battery-level.pl [options...]
+
+options:
+  -b, --battery battery_id    battery ID (x in /sys/class/power_supply/BATx/)
+                              defaults to 0
+  -o, --output  output_type   the thing to output (percentage, voltage)
+                              defaults to percentage
+  -v, --verbose               verbose output
+  -h, --help                  display this message
+```
 
 ### fetchers/lid-state.pl
 
-wololo
+```
+lid-state.pl - outputs the lid state
+
+usage: battery-level.pl [options...]
+
+options:
+  -l, --lid lid_id            lid ID (x in /sys/class/power_supply/BATx/)
+                              defaults to 0
+  -o, --output  output_type   the thing to output (word, number)
+                              defaults to word
+  -v, --verbose               verbose output
+  -h, --help                  display this message
+```
+
 
 ### watcher/watcher.pl
 
-wololo
+``` 
+watcher.pl - watches a bunch of variables based on rules and runs stuff accordingly
+
+usage: watcher.pl [options...]
+
+options:
+  -v, --verbose               verbose output
+  -h, --help                  display this message
+```
+
